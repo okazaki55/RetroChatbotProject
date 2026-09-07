@@ -1,0 +1,260 @@
+/* ============================================================
+   MODERN (2030) TEMASI
+   body.modern eklendiginde retro stilini ezer.
+   ============================================================ */
+
+body.modern {
+    background: #050814;
+    background-image:
+        radial-gradient(1100px 600px at 85% -10%, rgba(99, 102, 241, 0.28), transparent 60%),
+        radial-gradient(900px 550px at -10% 110%, rgba(34, 211, 238, 0.16), transparent 60%),
+        radial-gradient(700px 500px at 50% 120%, rgba(167, 139, 250, 0.12), transparent 60%);
+    background-attachment: fixed;
+    color: #dfe6ff;
+    font-family: "Segoe UI", system-ui, -apple-system, Arial, sans-serif;
+    transition: background 0.5s ease, color 0.5s ease;
+}
+
+body.modern a:link { color: #7aa2ff; }
+body.modern a:visited { color: #b197fc; }
+
+body.modern .retro-only { display: none !important; }
+
+body.modern marquee { display: none; }
+
+/* --- Ust cubuk --- */
+body.modern .topbar {
+    background: rgba(13, 17, 38, 0.65);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(122, 140, 255, 0.25);
+    border-radius: 999px;
+    width: min(920px, 96%);
+    box-shadow: 0 0 24px rgba(99, 102, 241, 0.18);
+    padding: 8px 18px;
+}
+
+body.modern .mod-label {
+    font-family: "Segoe UI", monospace;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    color: #67e8f9;
+    text-transform: uppercase;
+}
+
+body.modern #mode-btn {
+    background: linear-gradient(135deg, #6366f1, #22d3ee);
+    border: none;
+    color: #ffffff;
+    border-radius: 999px;
+    padding: 7px 18px;
+    font-family: "Segoe UI", sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    cursor: pointer;
+    box-shadow: 0 0 16px rgba(99, 102, 241, 0.55);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+body.modern #mode-btn:hover {
+    transform: translateY(-1px) scale(1.03);
+    box-shadow: 0 0 26px rgba(34, 211, 238, 0.7);
+}
+
+body.modern #mode-btn:active {
+    transform: scale(0.97);
+}
+
+/* --- Banner / hero --- */
+body.modern .banner {
+    background: transparent;
+    border: none;
+    width: auto;
+    max-width: 920px;
+    padding: 26px 10px 6px;
+    text-shadow: none;
+}
+
+body.modern .banner h1 {
+    font-family: "Segoe UI", sans-serif;
+    font-size: 54px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    background: linear-gradient(90deg, #818cf8, #22d3ee, #a78bfa);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: none;
+    margin: 0;
+}
+
+body.modern .banner .nine { color: transparent; }
+
+body.modern .banner .sub {
+    color: #9aa3d0;
+    font-style: normal;
+    font-size: 15px;
+    margin-top: 6px;
+}
+
+body.modern .tagline-2030 {
+    display: block;
+    color: #67e8f9;
+    font-family: "Consolas", "Courier New", monospace;
+    font-size: 12px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    margin-top: 10px;
+    text-shadow: 0 0 12px rgba(103, 232, 249, 0.6);
+}
+
+.tagline-2030 { display: none; }
+
+/* --- Cizgiler --- */
+body.modern .rainbow {
+    background: linear-gradient(90deg, #6366f1, #22d3ee, #a78bfa, #6366f1);
+    background-size: 300% 100%;
+    animation: modern-shift 8s linear infinite;
+    border: none;
+    border-radius: 4px;
+    height: 3px;
+    width: min(920px, 96%);
+    opacity: 0.8;
+}
+
+@keyframes modern-shift {
+    0% { background-position: 0% 0; }
+    100% { background-position: 300% 0; }
+}
+
+/* --- Yerlesim: kenar cubugu gizlenir --- */
+body.modern table.layout { width: min(920px, 96%); }
+body.modern td.side { display: none; }
+body.modern td.main { width: 100%; padding: 0; }
+
+/* --- Bilgi kutusu --- */
+body.modern .notice {
+    background: rgba(13, 18, 48, 0.55);
+    border: 1px solid rgba(122, 140, 255, 0.18);
+    border-left: 3px solid #22d3ee;
+    border-radius: 14px;
+    padding: 10px 14px;
+    color: #c7d2fe;
+    font-size: 13px;
+    backdrop-filter: blur(8px);
+}
+
+body.modern .modern-notice { display: block; }
+.modern-notice { display: none; }
+
+/* --- Sohbet penceresi --- */
+body.modern .win {
+    background: rgba(8, 11, 26, 0.7);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border: 1px solid rgba(122, 140, 255, 0.22);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 24px 70px rgba(0, 0, 0, 0.5), inset 0 0 0 1px rgba(255, 255, 255, 0.03);
+}
+
+body.modern .titlebar {
+    background: linear-gradient(90deg, rgba(99, 102, 241, 0.28), rgba(34, 211, 238, 0.1));
+    border-bottom: 1px solid rgba(122, 140, 255, 0.2);
+    color: #e6ebff;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 13px;
+    padding: 10px 16px;
+}
+
+body.modern .tbtn {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    color: #aab3e0;
+    line-height: 15px;
+}
+
+body.modern #messages {
+    background: transparent;
+    color: #cdd6ff;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 14px;
+    height: 340px;
+}
+
+body.modern .msg { line-height: 1.55; }
+
+body.modern .msg.you .who { color: #7dd3fc; }
+body.modern .msg.bot .who { color: #6ee7b7; }
+body.modern .msg.typing-line { color: #6ee7b7; }
+body.modern .msg.sys { color: #fde047; }
+body.modern .msg.sys .who { color: #fde047; }
+body.modern .msg.err .who { color: #f87171; }
+body.modern .msg.err { color: #fca5a5; }
+
+body.modern #chat-form {
+    background: rgba(255, 255, 255, 0.04);
+    border-top: 1px solid rgba(122, 140, 255, 0.14);
+    padding: 12px;
+}
+
+body.modern .prompt {
+    color: #22d3ee;
+    font-family: "Consolas", monospace;
+    font-weight: 700;
+}
+
+body.modern #msg {
+    background: rgba(10, 14, 32, 0.85);
+    border: 1px solid rgba(122, 140, 255, 0.3);
+    border-radius: 14px;
+    color: #e6ebff;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 14px;
+    padding: 9px 14px;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+body.modern #msg:focus {
+    border-color: #22d3ee;
+    box-shadow: 0 0 0 3px rgba(34, 211, 238, 0.18);
+}
+
+body.modern #send {
+    background: linear-gradient(135deg, #6366f1, #22d3ee);
+    border: none;
+    border-radius: 14px;
+    color: #ffffff;
+    font-family: "Segoe UI", sans-serif;
+    padding: 9px 22px;
+    box-shadow: 0 4px 18px rgba(99, 102, 241, 0.45);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+body.modern #send:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 24px rgba(34, 211, 238, 0.55);
+}
+
+body.modern #send:active { transform: scale(0.96); }
+
+body.modern .statusline {
+    background: transparent;
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    color: #7e88b8;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 12px;
+}
+
+/* --- Alt bilgi --- */
+body.modern table.footer {
+    width: min(920px, 96%);
+    color: #6b739e;
+}
+
+body.modern table.footer p { color: #6b739e; }
+body.modern table.footer .small { color: #565e8c; }
